@@ -1,0 +1,42 @@
+# Make vim the default editor
+export EDITOR="vim"
+
+# Don’t clear the screen after quitting a manual page
+export MANPAGER="less -X"
+
+# Larger bash history (default is 500)
+export HISTSIZE=10000
+export HISTFILESIZE=$HISTSIZE
+export HISTCONTROL=ignoredups
+
+
+# Set architecture flags
+#export ARCHFLAGS="-arch x86_64"
+
+
+# Use BREW openssl when installing mysql
+export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/
+
+export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
+
+# change the color of blue used
+export LSCOLORS='Exfxcxdxbxegedabagacad'         
+
+
+####################################################################
+##
+##	Android
+##
+####################################################################
+
+
+#JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home
+#export JAVA_HOME
+
+#export ANDROID_HOME=~/Library/Android/sdk
+#export PATH=$PATH:~/Library/Android/sdk/tools
+#export PATH=$PATH:~/Library/Android/sdk/platform-tools
+
+#if [ -d "$JAVA_HOME/bin" ] ; then
+#  PATH="$HOME/bin:$PATH"
+#fi

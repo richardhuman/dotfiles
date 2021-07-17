@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# Download https://rtyley.github.io/bfg-repo-cleaner/
+
+bfg

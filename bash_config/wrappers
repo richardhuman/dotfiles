@@ -1,0 +1,7 @@
+
+# Ruby - rbenv
+eval "$(rbenv init -)"
+
+
+# US - cloud-admin
+eval "$(_CLOUD_ADMIN_COMPLETE=source cloud-admin)"

@@ -1,0 +1,18 @@
+#######################################
+#
+# SSH client
+#
+#######################################
+
+Host *
+  Protocol 2
+  TCPKeepAlive yes
+  ServerAliveInterval 60
+
+# Connection multiplexing and persistence
+ControlMaster auto
+ControlPath /tmp/ssh_mux_%h_%p_%r
+ControlPersist 2h
+
+ForwardAgent yes
+AddKeysToAgent yes

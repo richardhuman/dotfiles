@@ -1,0 +1,8 @@
+# Source this into your shell via the .zshrc aliases
+
+# Added manually on 3-May-2021
+jdk() {
+        version=$1
+        export JAVA_HOME=$(/usr/libexec/java_home -v"$version");
+        java -version
+ }

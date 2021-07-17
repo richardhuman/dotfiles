@@ -1,0 +1,6 @@
+# Source this into your shell via the .zshrc aliases
+
+export GOPATH="$HOME/Projects/go"
+export GOROOT="$(brew --prefix golang)/libexec"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+
