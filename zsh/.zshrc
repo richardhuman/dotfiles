@@ -135,3 +135,6 @@ alias clean-ds-store="find . -type f -name '*.DS_Store' -ls -delete"
 # Mac finder
 alias finder-show="defaults write com.apple.Finder AppleShowAllFiles -bool YES; killall -HUP Finder"
 alias finder-hide="defaults write com.apple.Finder AppleShowAllFiles -bool NO; killall -HUP Finder"
+
+# Kubectl / Brave
+alias kb="kubectl -n besafe"
