@@ -121,6 +121,7 @@ export PATH=$PATH:~/bin
 # Setup dev environments
 alias dev-node="source ~/.richard_dotfiles/dev/dev-node"
 alias dev-go="source ~/.richard_dotfiles/dev/dev-go"
+alias dev-ruby="source ~/.richard_dotfiles/dev/dev-ruby"
 
 
 # IP Address aliases
@@ -137,4 +138,5 @@ alias finder-show="defaults write com.apple.Finder AppleShowAllFiles -bool YES; 
 alias finder-hide="defaults write com.apple.Finder AppleShowAllFiles -bool NO; killall -HUP Finder"
 
 # Kubectl / Brave
-alias kb="kubectl -n besafe"
+alias kb="kubectl -n brave-app"
+
