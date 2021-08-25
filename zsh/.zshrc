@@ -122,6 +122,7 @@ export PATH=$PATH:~/bin
 alias dev-node="source ~/.richard_dotfiles/dev/dev-node"
 alias dev-go="source ~/.richard_dotfiles/dev/dev-go"
 alias dev-ruby="source ~/.richard_dotfiles/dev/dev-ruby"
+alias dev-java="source ~/.richard_dotfiles/dev/dev-java"
 
 
 # IP Address aliases

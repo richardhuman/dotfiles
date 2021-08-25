@@ -1,8 +1,11 @@
 # Source this into your shell via the .zshrc aliases
 
 # Added manually on 3-May-2021
-jdk() {
-        version=$1
-        export JAVA_HOME=$(/usr/libexec/java_home -v"$version");
-        java -version
- }
+#jdk() {
+#        version=$1
+#        export JAVA_HOME=$(/usr/libexec/java_home -v"$version");
+#        java -version
+# }
+
+# Support for direct download install tarball
+PATH=/Users/richard/Projects/java/jdk-16.0.2+7/Contents/Home/bin:${PATH}
