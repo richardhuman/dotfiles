@@ -8,4 +8,5 @@
 # }
 
 # Support for direct download install tarball
-PATH=/Users/richard/Projects/java/jdk-16.0.2+7/Contents/Home/bin:${PATH}
+## PATH=/Users/richard/Projects/java/jdk-16.0.2+7/Contents/Home/bin:${PATH}
+PATH=/Users/richard/Projects/java/jdk-15.0.2+7/Contents/Home/bin:${PATH}
