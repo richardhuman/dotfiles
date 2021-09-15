@@ -123,7 +123,7 @@ alias dev-node="source ~/.richard_dotfiles/dev/dev-node"
 alias dev-go="source ~/.richard_dotfiles/dev/dev-go"
 alias dev-ruby="source ~/.richard_dotfiles/dev/dev-ruby"
 alias dev-java="source ~/.richard_dotfiles/dev/dev-java"
-
+alias dev-python="source ~/.richard_dotfiles/dev/dev-python"
 
 # IP Address aliases
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -140,4 +140,10 @@ alias finder-hide="defaults write com.apple.Finder AppleShowAllFiles -bool NO; k
 
 # Kubectl / Brave
 alias kb="kubectl -n brave-app"
+
+# Tailscale
+alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+
+# Mac firewall
+alias macfw="/usr/libexec/ApplicationFirewall/socketfilterfw"
 
