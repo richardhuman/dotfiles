@@ -124,6 +124,8 @@ alias dev-go="source ~/.richard_dotfiles/dev/dev-go"
 alias dev-ruby="source ~/.richard_dotfiles/dev/dev-ruby"
 alias dev-java="source ~/.richard_dotfiles/dev/dev-java"
 alias dev-python="source ~/.richard_dotfiles/dev/dev-python"
+# alias sunex-aws-sso="aws sso login --profile=SunEx-DeveloperAccess-535"
+alias sunex-aws="source ~/.aws/shell_session_credentials"
 
 # IP Address aliases
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
