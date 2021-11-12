@@ -1,0 +1,12 @@
+echo "> Setting up shell for proxima development."
+
+echo "> Node"
+source ~/.richard_dotfiles/dev/dev-node
+
+# >/dev/null 2>&1
+if aws sso list-accounts ; then
+	echo "> AWS SSO - currently logged in."
+else	
+	echo "> AWS SSO login required"
+	aws sso login --profile=SunEx-DeveloperAccess-535
+fi

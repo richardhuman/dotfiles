@@ -149,3 +149,6 @@ alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 # Mac firewall
 alias macfw="/usr/libexec/ApplicationFirewall/socketfilterfw"
 
+# Terragrun 
+alias tg="terragrunt"
+
