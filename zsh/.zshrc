@@ -152,3 +152,8 @@ alias macfw="/usr/libexec/ApplicationFirewall/socketfilterfw"
 # Terragrun 
 alias tg="terragrunt"
 
+
+# export NVM_SYMLINK_CURRENT=true 
+# export PATH=$PATH:./node_modules/.bin
+# export NVM_DIR="$HOME/.nvm"
+#     [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
