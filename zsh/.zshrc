@@ -149,8 +149,12 @@ alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 # Mac firewall
 alias macfw="/usr/libexec/ApplicationFirewall/socketfilterfw"
 
-# Terragrun 
+# Terragrunt
 alias tg="terragrunt"
+
+# tse utility - dev mode to handle multiple repo locations (instead of installing in /usr/local/bin)
+export PATH="./infrastructure/tse-cli:${PATH}"
+
 
 
 # export NVM_SYMLINK_CURRENT=true 
