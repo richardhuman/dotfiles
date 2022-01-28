@@ -2,7 +2,7 @@
 
 
 
-UTILITIES="bat jq htop bandwhich"
+UTILITIES="bat jq htop bandwhich fzf"
 
 echo "> Installing base utilities: ${UTILITIES}"
 
