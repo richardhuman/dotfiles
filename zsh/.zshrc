@@ -150,11 +150,8 @@ alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 alias macfw="/usr/libexec/ApplicationFirewall/socketfilterfw"
 
 # tse utility - dev mode to handle multiple repo locations (instead of installing in /usr/local/bin)
-export PATH="./infrastructure/tse-cli:${PATH}"
+## export PATH="./infrastructure/tse-cli:${PATH}"
 
+# Currently working lots in node - 2022-04-26
+dev-node
 
-
-# export NVM_SYMLINK_CURRENT=true 
-# export PATH=$PATH:./node_modules/.bin
-# export NVM_DIR="$HOME/.nvm"
-#     [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
