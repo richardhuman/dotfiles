@@ -155,3 +155,7 @@ alias macfw="/usr/libexec/ApplicationFirewall/socketfilterfw"
 # Currently working lots in node - 2022-04-26
 dev-node
 
+# Terraform
+alias terraform-1.1.6=/usr/local/terraform-versions/terraform-1.1.6
+alias terraform-1.3.3=/usr/local/terraform-versions/terraform-1.3.3
+
