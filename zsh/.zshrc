@@ -157,3 +157,7 @@ dev-node
 alias terraform-1.1.6=/usr/local/terraform-versions/terraform-1.1.6
 alias terraform-1.3.3=/usr/local/terraform-versions/terraform-1.3.3
 
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
