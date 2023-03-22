@@ -150,12 +150,19 @@ alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 # tse utility - dev mode to handle multiple repo locations (instead of installing in /usr/local/bin)
 ## export PATH="./infrastructure/tse-cli:${PATH}"
 
+# Enable fzf key-bindings and reverse search
+source /usr/local/Cellar/fzf/0.38.0/shell/key-bindings.zsh
+source /usr/local/Cellar/fzf/0.38.0/shell/completion.zsh
+
+
 # Currently working lots in node - 2022-04-26
 dev-node
+
 
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
 
 
