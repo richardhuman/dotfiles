@@ -139,13 +139,13 @@ alias finder-show="defaults write com.apple.Finder AppleShowAllFiles -bool YES; 
 alias finder-hide="defaults write com.apple.Finder AppleShowAllFiles -bool NO; killall -HUP Finder"
 
 # Kubectl / Brave
-alias kb="kubectl -n brave-app"
+# alias kb="kubectl -n brave-app"
 
 # Tailscale
 alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 
 # Mac firewall
-alias macfw="/usr/libexec/ApplicationFirewall/socketfilterfw"
+# alias macfw="/usr/libexec/ApplicationFirewall/socketfilterfw"
 
 # tse utility - dev mode to handle multiple repo locations (instead of installing in /usr/local/bin)
 ## export PATH="./infrastructure/tse-cli:${PATH}"
@@ -153,11 +153,9 @@ alias macfw="/usr/libexec/ApplicationFirewall/socketfilterfw"
 # Currently working lots in node - 2022-04-26
 dev-node
 
-# Terraform
-alias terraform-1.1.6=/usr/local/terraform-versions/terraform-1.1.6
-alias terraform-1.3.3=/usr/local/terraform-versions/terraform-1.3.3
-
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+
