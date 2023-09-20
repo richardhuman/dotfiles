@@ -71,8 +71,8 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-		git
-		sublime
+	git
+	sublime
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -101,7 +101,7 @@ export EDITOR='vim'
 # PATHS
 # =====================================================================
 
-export PATH=$PATH:~/bin
+export PATH=~/bin:/opt/homebrew/bin:$PATH
 
 # =====================================================================
 # ALIASES
@@ -151,8 +151,8 @@ alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 ## export PATH="./infrastructure/tse-cli:${PATH}"
 
 # Enable fzf key-bindings and reverse search
-source /usr/local/Cellar/fzf/0.42.0/shell/key-bindings.zsh
-source /usr/local/Cellar/fzf/0.42.0/shell/completion.zsh
+source /opt/homebrew/Cellar/fzf/0.42.0/shell/key-bindings.zsh
+source /opt/homebrew/Cellar/fzf/0.42.0/shell/completion.zsh
 
 
 # Currently working lots in node - 2022-04-26
@@ -161,8 +161,8 @@ dev-node
 
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+#export SDKMAN_DIR="$HOME/.sdkman"
+#[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 
 

@@ -14,10 +14,11 @@ echo "> Installing DEV utilities: ${DEV_UTILITIES}"
 
 brew install ${DEV_UTILITIES}
 
+echo "> Installing MAC utilities: ${MAC_UTILITIES}"
+
+brew install ${MAC_UTILITIES}
+
+# Java?
 # echo "> Install sdkman"
 # $ curl -s "https://get.sdkman.io" | bash
-
-
-
-
 # brew install --cask browserosaurus
