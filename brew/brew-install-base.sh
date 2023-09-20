@@ -3,7 +3,7 @@
 
 
 MAC_UTILITIES="smartmontools"
-UTILITIES="bat jq htop glances bandwhich fzf wget nmap"
+UTILITIES="vim bat jq htop glances bandwhich fzf wget nmap"
 DEV_UTILITIES="nvm python3 tilt tfenv rbenv gh postgresql@14"
 
 echo "> Installing BASE utilities: ${UTILITIES}"
