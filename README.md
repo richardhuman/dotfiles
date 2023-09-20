@@ -9,18 +9,3 @@
 
 
 ## Brew
-
-* bat
-* lazydocker
-* jq
-* watch
-
-* mariadb
-* rbenv
-* python3
-
-* minikube
-* postgres
-* skaffold
-* redis
- 
