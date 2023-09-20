@@ -1,6 +1,17 @@
 # README.md
 
-## Install
+## Mac
+
+- iTerm2
+- 1Password
+- `xcode-select --install`
+- Menumeters
+- Things
+- Excel, Word
+- DaisyDIsk
+
+
+## ZSH
 
 * Install https://ohmyz.sh
 * Clone into ~/.richard_dotfiles
@@ -8,4 +19,13 @@
 * `ln -s ~/.richard_dotfiles/zsh/.zshrc`
 
 
+- 
+
 ## Brew
+
+- Install Homebrew
+- `~/.richard_dotfiles/brew/brew-install-base.sh`
+
+## Dev
+
+- Jetbrains toolbox
