@@ -2,6 +2,7 @@
 
 
 
+MAC_UTILITIES="smartmontools"
 UTILITIES="bat jq htop glances bandwhich fzf wget nmap"
 DEV_UTILITIES="nvm python3 tilt tfenv rbenv gh postgresql@14"
 
@@ -19,3 +20,4 @@ brew install ${DEV_UTILITIES}
 
 
 
+# brew install --cask browserosaurus
