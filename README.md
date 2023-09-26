@@ -8,8 +8,17 @@
 - Menumeters
 - Things
 - Excel, Word
-- DaisyDIsk
-
+- DaisyDisk
+- Chrome
+- Reincubate Camo
+- Whatsapp (Beta from website, ARM)
+- Slack
+- Tailscale
+- Rectangle.app
+- PG Admin (?)
+- Firefox
+- Tailscale
+- Safari Tech Preview
 
 ## ZSH
 
@@ -19,13 +28,15 @@
 * `ln -s ~/.richard_dotfiles/zsh/.zshrc`
 
 
-- 
-
 ## Brew
 
 - Install Homebrew
 - `~/.richard_dotfiles/brew/brew-install-base.sh`
+- `brew install 1password-cli`
 
 ## Dev
 
 - Jetbrains toolbox
+
+
+brew rbenv-sync, brew nodenv-sync and brew pyenv-sync
