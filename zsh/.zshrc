@@ -157,7 +157,7 @@ source /opt/homebrew/Cellar/fzf/0.42.0/shell/completion.zsh
 
 # Currently working lots in node - 2022-04-26
 dev-node
-
+dev-ruby
 
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
