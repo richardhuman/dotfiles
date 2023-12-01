@@ -4,7 +4,7 @@
 
 MAC_UTILITIES="smartmontools"
 UTILITIES="bat jq htop glances bandwhich fzf wget nmap"
-DEV_UTILITIES="nvm python3 tilt tfenv rbenv gh postgresql@14"
+DEV_UTILITIES="nvm python3 tilt tfenv rbenv gh postgresql@16"
 
 echo "> Installing BASE utilities: ${UTILITIES}"
 
@@ -19,6 +19,6 @@ echo "> Installing MAC utilities: ${MAC_UTILITIES}"
 brew install ${MAC_UTILITIES}
 
 # Java?
-# echo "> Install sdkman"
-# $ curl -s "https://get.sdkman.io" | bash
+echo "> Install sdkman"
+curl -s "https://get.sdkman.io" | bash
 # brew install --cask browserosaurus

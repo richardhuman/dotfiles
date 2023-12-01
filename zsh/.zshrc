@@ -151,18 +151,18 @@ alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 ## export PATH="./infrastructure/tse-cli:${PATH}"
 
 # Enable fzf key-bindings and reverse search
-source /opt/homebrew/Cellar/fzf/0.42.0/shell/key-bindings.zsh
-source /opt/homebrew/Cellar/fzf/0.42.0/shell/completion.zsh
+source /opt/homebrew/Cellar/fzf/0.44.1/shell/key-bindings.zsh
+source /opt/homebrew/Cellar/fzf/0.44.1/shell/completion.zsh
 
 
-# Currently working lots in node - 2022-04-26
+# Currently working lots in node && ruby
 dev-node
 dev-ruby
 
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-#export SDKMAN_DIR="$HOME/.sdkman"
-#[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 
 

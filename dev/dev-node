@@ -3,7 +3,7 @@
 export NVM_DIR="$HOME/.nvm"
 
 # This should be helpful for Webstorm
-export NVM_SYMLINK_CURRENT=true 
+# export NVM_SYMLINK_CURRENT=true 
 
 # This loads nvm
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"  
