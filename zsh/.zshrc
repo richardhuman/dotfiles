@@ -151,8 +151,8 @@ alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 ## export PATH="./infrastructure/tse-cli:${PATH}"
 
 # Enable fzf key-bindings and reverse search
-source /opt/homebrew/Cellar/fzf/0.44.1/shell/key-bindings.zsh
-source /opt/homebrew/Cellar/fzf/0.44.1/shell/completion.zsh
+source /opt/homebrew/Cellar/fzf/0.45.0/shell/key-bindings.zsh
+source /opt/homebrew/Cellar/fzf/0.45.0/shell/completion.zsh
 
 
 # Currently working lots in node && ruby
