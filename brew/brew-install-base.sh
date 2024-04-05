@@ -29,3 +29,6 @@ brew install font-monaspace
 echo "> Install sdkman"
 curl -s "https://get.sdkman.io" | bash
 # brew install --cask browserosaurus
+
+# Bruno - API
+brew install bruno

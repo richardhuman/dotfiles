@@ -151,12 +151,18 @@ alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 ## export PATH="./infrastructure/tse-cli:${PATH}"
 
 # Enable fzf key-bindings and reverse search
-source /opt/homebrew/Cellar/fzf/0.48.0/shell/key-bindings.zsh
-source /opt/homebrew/Cellar/fzf/0.48.0/shell/completion.zsh
+source /opt/homebrew/Cellar/fzf/0.48.1/shell/key-bindings.zsh
+source /opt/homebrew/Cellar/fzf/0.48.1/shell/completion.zsh
 
+
+# 5-Apr-2024
+# This is enabled before rbenv as a work-around for Puma crashinng on startup 
+# with the solid_queue plugin - in the Lumenii/SPT app
+# https://github.com/rails/rails/issues/38560
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 # Currently working lots in node && ruby
-dev-node
+# dev-node
 dev-ruby
 
 
