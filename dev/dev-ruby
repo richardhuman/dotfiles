@@ -1,5 +1,14 @@
+# 5-Apr-2024
+# This is enabled before rbenv as a work-around for Puma crashinng on startup
+# with the solid_queue plugin - in the Lumenii/SPT app
+# https://github.com/rails/rails/issues/38560
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
+
 export PATH="/Users/richard/.rbenv/shims:${PATH}"
 export RBENV_SHELL=zsh
+
+
 # source '/usr/local/Cellar/rbenv/1.1.2/libexec/../completions/rbenv.zsh'
 # command rbenv rehash 2>/dev/null
 # rbenv() {
