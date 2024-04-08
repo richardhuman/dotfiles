@@ -154,8 +154,13 @@ alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 source /opt/homebrew/Cellar/fzf/0.48.1/shell/key-bindings.zsh
 source /opt/homebrew/Cellar/fzf/0.48.1/shell/completion.zsh
 
-
-
+# 5-Apr-2024
+# This is enabled before rbenv as a work-around for Puma crashinng on startup
+# with the solid_queue plugin - in the Lumenii/SPT app
+# https://github.com/rails/rails/issues/38560.
+# On moving this around into the dev-ruby script, the issue still persists.
+# So we're leaving it here.
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 # Currently working lots in node && ruby
 # dev-node
