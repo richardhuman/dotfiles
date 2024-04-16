@@ -163,8 +163,11 @@ source /opt/homebrew/Cellar/fzf/0.49.0/shell/completion.zsh
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 # Currently working lots in node && ruby
-# dev-node
-# dev-ruby
+dev-node
+dev-ruby
+
+# cd to the projects folder on the data drive
+alias prj="cd /Volumes/Data/Dropbox/Mac-Mini-Work/Projects"
 
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
