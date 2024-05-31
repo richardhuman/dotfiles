@@ -97,7 +97,6 @@ export EDITOR='vim'
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-
 # =====================================================================
 # PATHS
 # =====================================================================
@@ -105,80 +104,9 @@ export EDITOR='vim'
 export PATH=~/bin:/opt/homebrew/bin:$PATH
 
 # =====================================================================
-# ALIASES
+# Enhanced history
 # =====================================================================
-
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
-
-# Setup dev environments
-alias dev-node="source ~/.richard_dotfiles/dev/dev-node"
-alias dev-go="source ~/.richard_dotfiles/dev/dev-go"
-alias dev-ruby="source ~/.richard_dotfiles/dev/dev-ruby"
-alias dev-java="source ~/.richard_dotfiles/dev/dev-java"
-alias dev-python="source ~/.richard_dotfiles/dev/dev-python"
-
-# IP Address aliases
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias localip="ipconfig getifaddr en1"
-alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
-
-
-# Recursively delete `.DS_Store` files
-alias clean-ds-store="find . -type f -name '*.DS_Store' -ls -delete"
-
-# Mac finder
-alias finder-show="defaults write com.apple.Finder AppleShowAllFiles -bool YES; killall -HUP Finder"
-alias finder-hide="defaults write com.apple.Finder AppleShowAllFiles -bool NO; killall -HUP Finder"
-
-# Kubectl / Brave
-# alias kb="kubectl -n brave-app"
-
-# Tailscale
-alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
-
-# Mac firewall
-# alias macfw="/usr/libexec/ApplicationFirewall/socketfilterfw"
-
-# tse utility - dev mode to handle multiple repo locations (instead of installing in /usr/local/bin)
-## export PATH="./infrastructure/tse-cli:${PATH}"
-
-# Enable fzf key-bindings and reverse search
-# source /opt/homebrew/Cellar/fzf/0.49.0/shell/key-bindings.zsh
-# source /opt/homebrew/Cellar/fzf/0.49.0/shell/completion.zsh
-
-# 5-Apr-2024
-# This is enabled before rbenv as a work-around for Puma crashinng on startup
-# with the solid_queue plugin - in the Lumenii/SPT app
-# https://github.com/rails/rails/issues/38560.
-# On moving this around into the dev-ruby script, the issue still persists.
-# So we're leaving it here.
-export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
-
-# Currently working lots in node && ruby
-dev-node
-dev-ruby
-
-# cd to the projects folder on the data drive
-alias prj="cd /Volumes/Data/Dropbox/Mac-Mini-Work/Projects"
-
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
-
-# #nhanced history
 # https://martinheinz.dev/blog/110
-
 
 HISTFILE="$HOME/.zsh_history"
 HISTSIZE=10000000
@@ -200,3 +128,97 @@ setopt HIST_NO_STORE         # Don't store history commands
 setopt HIST_REDUCE_BLANKS    # Remove superfluous blanks from each command line being added to the history.
 
 export HIST_STAMPS="yyyy-mm-dd"
+
+# =====================================================================
+# ALIASES
+# =====================================================================
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+
+
+# IP Address aliases
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ipconfig getifaddr en1"
+alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
+
+
+# Recursively delete `.DS_Store` files
+alias clean-ds-store="find . -type f -name '*.DS_Store' -ls -delete"
+
+# Mac finder
+alias finder-show="defaults write com.apple.Finder AppleShowAllFiles -bool YES; killall -HUP Finder"
+alias finder-hide="defaults write com.apple.Finder AppleShowAllFiles -bool NO; killall -HUP Finder"
+
+# Tailscale
+alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+
+# Mac firewall
+# alias macfw="/usr/libexec/ApplicationFirewall/socketfilterfw"
+
+
+
+# =====================================================================
+# ALIASES - DEV - General
+# =====================================================================
+
+# Setup dev environments
+alias dev-node="source ~/.richard_dotfiles/dev/dev-node"
+alias dev-go="source ~/.richard_dotfiles/dev/dev-go"
+alias dev-ruby="source ~/.richard_dotfiles/dev/dev-ruby"
+alias dev-java="source ~/.richard_dotfiles/dev/dev-java"
+alias dev-python="source ~/.richard_dotfiles/dev/dev-python"
+
+# Clean merged branches (adapted from https://stackoverflow.com/a/6127884/14870317)
+git-prune-local = git branch -d `git branch --merged | grep -iv main`
+
+
+# =====================================================================
+# ALIASES - DEV - TSE
+# =====================================================================
+
+
+# tse utility - dev mode to handle multiple repo locations (instead of installing in /usr/local/bin)
+## export PATH="./infrastructure/tse-cli:${PATH}"
+
+dev-node
+
+# =====================================================================
+# ALIASES - DEV - Lumenii Rails
+# =====================================================================
+
+
+# 5-Apr-2024
+# This is enabled before rbenv as a work-around for Puma crashinng on startup
+# with the solid_queue plugin - in the Lumenii/SPT app
+# https://github.com/rails/rails/issues/38560.
+# On moving this around into the dev-ruby script, the issue still persists.
+# So we're leaving it here.
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+dev-ruby
+
+
+# =====================================================================
+# ALIASES - DEV - Mac Mini setup
+# =====================================================================
+
+# cd to the projects folder on the data drive
+alias prj="cd /Volumes/Data/Dropbox/Mac-Mini-Work/Projects"
+
+
+
+
+
+# =====================================================================
+# SDK man - Java
+# =====================================================================
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
