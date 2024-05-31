@@ -176,7 +176,7 @@ alias dev-java="source ~/.richard_dotfiles/dev/dev-java"
 alias dev-python="source ~/.richard_dotfiles/dev/dev-python"
 
 # Clean merged branches (adapted from https://stackoverflow.com/a/6127884/14870317)
-git-prune-local = git branch -d `git branch --merged | grep -iv main`
+alias git-prune-local="git branch --merged | grep -iv main | xargs git branch -d "
 
 
 # =====================================================================
