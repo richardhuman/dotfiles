@@ -6,17 +6,17 @@
 
 # From: eval "$(pyenv init --path)"
 export PYENV_ROOT="$HOME/.pyenv"
-export PATH="${PYENV_ROOT}/shims:${PATH}"
-#export PATH="$PYENV_ROOT/bin:$PATH"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+
+
+
+# =======================================================================================
 
 # Installing 3.6.14
 # https://stackoverflow.com/questions/66482346/problems-installing-python-3-6-with-pyenv-on-mac-os-big-sur
 
 #export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib"
 #export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/bzip2/include"
-
-
-
-
 #eval "$(pyenv virtualenv-init -)"
-

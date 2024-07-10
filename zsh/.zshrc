@@ -178,9 +178,15 @@ alias dev-python="source ~/.richard_dotfiles/dev/dev-python"
 # Clean merged branches (adapted from https://stackoverflow.com/a/6127884/14870317)
 alias git-prune-local="git branch --merged | grep -iv main | xargs git branch -d "
 
+# =====================================================================
+# ALIASES - DEV - Neith, FSAT
+# =====================================================================
+
+dev-python
+
 
 # =====================================================================
-# ALIASES - DEV - TSE
+# ALIASES - DEV - TSE, Neith
 # =====================================================================
 
 
@@ -207,9 +213,6 @@ dev-ruby
 # =====================================================================
 # ALIASES - DEV - Mac Mini setup
 # =====================================================================
-
-# cd to the projects folder on the data drive
-alias prj="cd /Volumes/Data/Dropbox/Mac-Mini-Work/Projects"
 
 
 
