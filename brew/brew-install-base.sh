@@ -4,7 +4,7 @@
 
 MAC_UTILITIES="smartmontools"
 UTILITIES="bat jq htop glances bandwhich fzf wget nmap 1password-cli"
-DEV_UTILITIES="nvm python3 tilt tfenv rbenv gh postgresql@16 awscli jq redis"
+DEV_UTILITIES="nvm python3 tilt tfenv rbenv gh postgresql@16 awscli jq redis pyenv"
 # TSE_DEV_UTILITIES="wkhtmltopdf"
 
 echo "> Installing BASE utilities: ${UTILITIES}"
@@ -32,3 +32,7 @@ curl -s "https://get.sdkman.io" | bash
 
 # Bruno - API
 brew install bruno
+
+# Rust
+echo "> Rust: https://www.rust-lang.org/tools/install"
+echo  "> curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh"

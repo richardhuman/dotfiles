@@ -174,6 +174,7 @@ alias dev-go="source ~/.richard_dotfiles/dev/dev-go"
 alias dev-ruby="source ~/.richard_dotfiles/dev/dev-ruby"
 alias dev-java="source ~/.richard_dotfiles/dev/dev-java"
 alias dev-python="source ~/.richard_dotfiles/dev/dev-python"
+alias dev-rust="source ~/.richard_dotfiles/dev/dev-rust"
 
 # Clean merged branches (adapted from https://stackoverflow.com/a/6127884/14870317)
 alias git-prune-local="git branch --merged | grep -iv main | xargs git branch -d "
@@ -183,6 +184,7 @@ alias git-prune-local="git branch --merged | grep -iv main | xargs git branch -d
 # =====================================================================
 
 dev-python
+dev-rust
 
 
 # =====================================================================
