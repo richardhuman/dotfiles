@@ -1,5 +1,8 @@
+
+
+
 # Installed via SDKman
-sdk install java 21-open
+# sdk install java 21-open
 
 
 # Gradle installation via brew
@@ -10,3 +13,8 @@ sdk install java 21-open
 
 # Maven installation via brew
 ##mvn --version
+
+
+
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"

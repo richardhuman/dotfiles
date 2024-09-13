@@ -173,8 +173,10 @@ alias dev-node="source ~/.richard_dotfiles/dev/dev-node"
 alias dev-go="source ~/.richard_dotfiles/dev/dev-go"
 alias dev-ruby="source ~/.richard_dotfiles/dev/dev-ruby"
 alias dev-java="source ~/.richard_dotfiles/dev/dev-java"
-alias dev-python="source ~/.richard_dotfiles/dev/dev-python"
+# alias dev-python="source ~/.richard_dotfiles/dev/dev-python"
 alias dev-rust="source ~/.richard_dotfiles/dev/dev-rust"
+
+alias dev-mise="source ~/.richard_dotfiles/dev/dev-mise"
 
 # Clean merged branches (adapted from https://stackoverflow.com/a/6127884/14870317)
 alias git-prune-local="git branch --merged | grep -iv main | xargs git branch -d "
@@ -183,7 +185,8 @@ alias git-prune-local="git branch --merged | grep -iv main | xargs git branch -d
 # ALIASES - DEV - Neith, FSAT
 # =====================================================================
 
-dev-python
+# Switching to mise for Python
+# dev-python
 dev-rust
 
 
@@ -195,7 +198,7 @@ dev-rust
 # tse utility - dev mode to handle multiple repo locations (instead of installing in /usr/local/bin)
 ## export PATH="./infrastructure/tse-cli:${PATH}"
 
-dev-node
+# dev-node
 
 # =====================================================================
 # ALIASES - DEV - Lumenii Rails
@@ -225,5 +228,12 @@ dev-ruby
 # =====================================================================
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+## export SDKMAN_DIR="$HOME/.sdkman"
+## [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+
+# =====================================================================
+# Mise
+# =====================================================================
+
+# echo 'export PATH="$HOME/.local/share/mise/shims:$PATH"' >> ~/.zprofile
