@@ -171,9 +171,9 @@ alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 # Setup dev environments
 alias dev-node="source ~/.richard_dotfiles/dev/dev-node"
 alias dev-go="source ~/.richard_dotfiles/dev/dev-go"
-alias dev-ruby="source ~/.richard_dotfiles/dev/dev-ruby"
-alias dev-java="source ~/.richard_dotfiles/dev/dev-java"
-# alias dev-python="source ~/.richard_dotfiles/dev/dev-python"
+## alias dev-ruby="source ~/.richard_dotfiles/dev/dev-ruby"
+## alias dev-java="source ~/.richard_dotfiles/dev/dev-java"
+## alias dev-python="source ~/.richard_dotfiles/dev/dev-python"
 alias dev-rust="source ~/.richard_dotfiles/dev/dev-rust"
 
 alias dev-mise="source ~/.richard_dotfiles/dev/dev-mise"
@@ -211,29 +211,30 @@ dev-rust
 # https://github.com/rails/rails/issues/38560.
 # On moving this around into the dev-ruby script, the issue still persists.
 # So we're leaving it here.
-export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
-dev-ruby
+
+# Not using PUMA anymore
+# export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
+# Switching to mise
+# dev-ruby
 
 
 # =====================================================================
 # ALIASES - DEV - Mac Mini setup
 # =====================================================================
 
+alias lum="cd ~/Projects/Lumenii/succession-planning-tool"
+alias np="cd ~/Projects/Neith/neith-platform"
 
-
-
-
-# =====================================================================
-# SDK man - Java
-# =====================================================================
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-## export SDKMAN_DIR="$HOME/.sdkman"
-## [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 
 # =====================================================================
 # Mise
 # =====================================================================
 
+# Mise install notes
+# - ruby 3.3.5
+#   - brew install libyaml
+
 # echo 'export PATH="$HOME/.local/share/mise/shims:$PATH"' >> ~/.zprofile
+export PATH="$HOME/.local/share/mise/shims:$PATH"
