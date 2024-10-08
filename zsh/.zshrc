@@ -225,7 +225,7 @@ dev-rust
 
 alias lum="cd ~/Projects/Lumenii/succession-planning-tool"
 alias np="cd ~/Projects/Neith/neith-platform"
-
+alias fev="cd ~/Projects/FevInsure/solar-analysis-tool"
 
 
 # =====================================================================
