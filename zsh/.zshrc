@@ -223,9 +223,9 @@ dev-rust
 # ALIASES - DEV - Mac Mini setup
 # =====================================================================
 
-alias lum="cd ~/Projects/Lumenii/succession-planning-tool"
-alias np="cd ~/Projects/Neith/neith-platform"
-alias fev="cd ~/Projects/FevInsure/solar-analysis-tool"
+alias lum="cd ~/Projects/Lumenii/succession-planning-tool && source .env.dev.sh"
+alias np="cd ~/Projects/Neith/neith-platform && source .env.dev.sh"
+alias fev="cd ~/Projects/FevInsure/solar-analysis-tool && source .env.dev.sh"
 
 
 # =====================================================================
