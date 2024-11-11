@@ -226,7 +226,7 @@ dev-rust
 alias lum="cd ~/Projects/Lumenii/succession-planning-tool && source .env.dev.sh"
 alias np="cd ~/Projects/Neith/neith-platform && source .env.dev.sh"
 alias fev="cd ~/Projects/FevInsure/solar-analysis-tool && source .env.dev.sh"
-
+alias sun="cd ~/Projects/Sun-Exchange/proxima && source .env.dev.sh"
 
 # =====================================================================
 # Mise
