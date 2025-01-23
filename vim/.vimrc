@@ -23,8 +23,6 @@ if exists("&undodir")
 endif
 
 
-" switch on pathogen
-execute pathogen#infect()
 
 set wrap
 set linebreak
@@ -99,7 +97,7 @@ nmap <leader>ne :NERDTree<cr>
 
 
 " pathogen added
-filetype plugin indent on
+" filetype plugin indent on
 
 
 
