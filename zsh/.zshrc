@@ -187,6 +187,7 @@ alias git-prune-local="git branch --merged | grep -iv main | xargs git branch -d
 
 alias ob-push="~/.richard_dotfiles/obsidian/ob-git.sh push"
 alias ob-pull="~/.richard_dotfiles/obsidian/ob-git.sh pull"
+alias ob="~/.richard_dotfiles/obsidian/ob-open.sh"
 
 
 # =====================================================================
