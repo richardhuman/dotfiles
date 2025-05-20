@@ -182,6 +182,14 @@ alias dev-mise="source ~/.richard_dotfiles/dev/dev-mise"
 alias git-prune-local="git branch --merged | grep -iv main | xargs git branch -d "
 
 # =====================================================================
+# ALIASES - Obsidian
+# =====================================================================
+
+alias ob-push="~/.richard_dotfiles/obsidian/ob-git.sh push"
+alias ob-pull="~/.richard_dotfiles/obsidian/ob-git.sh pull"
+
+
+# =====================================================================
 # ALIASES - DEV - Neith, FSAT
 # =====================================================================
 
