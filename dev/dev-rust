@@ -1,2 +1,6 @@
 export RUSTUP_HOME=~/.rustup
 . "$HOME/.cargo/env"
+
+
+# https://www.rust-lang.org/tools/install
+# rustup update
