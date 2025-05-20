@@ -187,7 +187,7 @@ alias git-prune-local="git branch --merged | grep -iv main | xargs git branch -d
 
 # Switching to mise for Python
 # dev-python
-dev-rust
+# dev-rust
 
 
 # =====================================================================
