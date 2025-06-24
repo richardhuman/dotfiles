@@ -15,6 +15,9 @@ case "$1" in
         open "obsidian://open?vault=Spin-Up-Notes"
         ;;
 
+    cg)    
+        open "obsidian://open?vault=CulturaGo-Notes"
+        ;;
     *)
         echo "push | pull required"
 esac
