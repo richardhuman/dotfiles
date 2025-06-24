@@ -1,0 +1,4 @@
+postgres
+
+sudo apt install postgresql-16
+Sudo apt install libpq-dev

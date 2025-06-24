@@ -1,0 +1,6 @@
+# Swap capslock to ctrl
+
+sudo vim /etc/default/keyboard
+XKBOPTIONS="ctrl:swapcaps" 
+
+sudo dpkg-reconfigure keyboard-configuration
