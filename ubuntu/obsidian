@@ -1,0 +1,5 @@
+obsidian
+
+# download deb file to ~/Downloads
+
+sudo apt install -f ~/Downloads/obsidian_1.8.10_amd64.deb
