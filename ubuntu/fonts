@@ -1,0 +1,5 @@
+fonts
+
+https://github.com/basecamp/omakub/blob/master/install/desktop/fonts.sh
+
+mkdir -p ~/.local/share/fonts
