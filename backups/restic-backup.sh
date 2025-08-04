@@ -3,8 +3,7 @@
 # Setup
 # restic init --repo /Volumes/Richard-Mini-Backups/richard-mini-restic
 
-export RESTIC_REPO=/Volumes/Richard-Mini-Backups/richard-mini-restic
-
+RESTIC_REPO=/Volumes/Richard-Mini-Backups/richard-mini-restic
 RESTIC_PASSWORD=$(op item get Mac-Mini-Restic-Backups --vault Work --fields=password --reveal)
 
 restic -r ${RESTIC_REPO} --verbose backup /Volumes/Data
