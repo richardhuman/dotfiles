@@ -9,3 +9,5 @@ export RESTIC_PASSWORD=$(op item get Mac-Mini-Restic-Backups --vault Work --fiel
 
 restic -r ${RESTIC_REPO} --verbose backup /Volumes/Data
 restic -r ${RESTIC_REPO} --verbose backup /Users/richard --exclude node_modules --exclude venv
+
+diskutil unmount /Volumes/Richard-Mini-Backups
