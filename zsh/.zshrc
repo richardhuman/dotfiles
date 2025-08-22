@@ -236,7 +236,7 @@ alias lum="cd ~/Projects/Lumenii/succession-planning-tool && source .env.dev.sh"
 alias np="cd ~/Projects/Neith/neith-platform && source .env.dev.sh"
 alias fev="cd ~/Projects/FevInsure/solar-analysis-tool && source .env.dev.sh"
 alias sun="cd ~/Projects/Sun-Exchange/proxima && source .env.dev.sh"
-alias cgp="cd ~/Projects/Cultura-Go/culturago-platform && source .env.uv.local.sh && source .env.dwh.local.sh"
+alias cgp="cd ~/Projects/Cultura-Go/culturago-platform && source .env.core.local.sh"
 
 
 # =====================================================================
