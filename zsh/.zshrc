@@ -256,3 +256,5 @@ export PATH="$HOME/.local/share/mise/shims:$PATH"
 # =====================================================================
 
 alias n="nvim"
+
+export PATH="$HOME/.local/bin:$PATH"
